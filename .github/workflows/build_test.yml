@@ -1,4 +1,4 @@
-name: Build and Test ROS2 Package
+name: Build and Test ROS2 Package on Multiple Versions
 
 on:
   push:
@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        ros_distribution: [foxy, galactic, humble] # テストするROS2のバージョンを指定
+
     steps:
     - name: リポジトリのコードを取得
       uses: actions/checkout@v3
@@ -17,10 +21,10 @@ jobs:
     - name: ROS2環境のセットアップ
       uses: ros-tooling/setup-ros@v0.6
       with:
-        required-ros-distributions: humble
+        required-ros-distributions: ${{ matrix.ros_distribution }}
 
     - name: 依存関係のインストール
-      run: sudo apt-get update && sudo apt-get install -y ros-humble-std-msgs
+      run: sudo apt-get update && sudo apt-get install -y ros-${{ matrix.ros_distribution }}-std-msgs
 
     - name: ビルドキャッシュのクリア
       run: |
