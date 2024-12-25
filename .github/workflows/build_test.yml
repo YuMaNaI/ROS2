@@ -22,13 +22,17 @@ jobs:
     - name: 依存関係のインストール
       run: sudo apt-get update && sudo apt-get install -y ros-humble-std-msgs
 
+    - name: ビルドキャッシュのクリア
+      run: |
+        rm -rf build install log
+
     - name: ビルドの実行
       run: |
-        colcon build --packages-select hello_pkg
+        colcon build --base-paths src --packages-select hello_pkg
 
     - name: テストの実行
       run: |
         source install/setup.bash
         ros2 run hello_pkg hello &
-        sleep 5
+        sleep 10
         ros2 topic echo /current_time --once
