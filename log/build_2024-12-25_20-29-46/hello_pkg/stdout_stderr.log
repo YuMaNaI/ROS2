@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target hello[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hello.dir/src/hello.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hello[0m
+[100%] Built target hello
+-- Install configuration: ""
+-- Installing: /home/yuma/ros2_ws/install/hello_pkg/lib/hello_pkg/hello
+-- Set runtime path of "/home/yuma/ros2_ws/install/hello_pkg/lib/hello_pkg/hello" to ""
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/package_run_dependencies/hello_pkg
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/parent_prefix_path/hello_pkg
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/path.sh
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/path.dsv
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.bash
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.sh
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.zsh
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.dsv
+-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/package.dsv
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/packages/hello_pkg
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/cmake/hello_pkgConfig.cmake
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/cmake/hello_pkgConfig-version.cmake
+-- Up-to-date: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/package.xml

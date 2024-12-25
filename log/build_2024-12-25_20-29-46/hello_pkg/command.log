@@ -1,0 +1,4 @@
+Invoking command in '/home/yuma/ros2_ws/build/hello_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yuma/ros2_ws/build/hello_pkg -- -j12 -l12
+Invoked command in '/home/yuma/ros2_ws/build/hello_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/yuma/ros2_ws/build/hello_pkg -- -j12 -l12
+Invoking command in '/home/yuma/ros2_ws/build/hello_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yuma/ros2_ws/build/hello_pkg
+Invoked command in '/home/yuma/ros2_ws/build/hello_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/yuma/ros2_ws/build/hello_pkg

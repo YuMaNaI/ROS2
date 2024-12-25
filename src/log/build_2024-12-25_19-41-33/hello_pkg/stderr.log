@@ -1,0 +1,9 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+gmake[2]: *** [CMakeFiles/hello.dir/build.make:76: CMakeFiles/hello.dir/src/hello.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

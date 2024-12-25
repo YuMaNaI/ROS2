@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.001104] (-) JobUnselected: {'identifier': 'mypkg'}
+[0.001192] (-) JobUnselected: {'identifier': 'person_msgs'}
+[0.001228] (hello_pkg) JobQueued: {'identifier': 'hello_pkg', 'dependencies': OrderedDict()}
+[0.001401] (hello_pkg) JobStarted: {'identifier': 'hello_pkg'}
+[0.028595] (hello_pkg) JobProgress: {'identifier': 'hello_pkg', 'progress': 'cmake'}
+[0.029782] (hello_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/yuma/ros2_ws/src/hello_pkg', '-DCMAKE_INSTALL_PREFIX=/home/yuma/ros2_ws/install/hello_pkg'], 'cwd': '/home/yuma/ros2_ws/build/hello_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yuma'), ('ROS_PACKAGE_PATH', '/home/yuma/ros2_ws/install/hello_pkg/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yuma/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/yuma'), ('OLDPWD', '/home/yuma/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yuma/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yuma'), ('NAME', 'YUMA-Laptop5'), ('WSL_INTEROP', '/run/WSL/390_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/yuma/ros2_ws/install/hello_pkg/lib/x86_64-linux-gnu/pkgconfig:/home/yuma/ros2_ws/install/hello_pkg/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/nyuma/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nyuma/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yuma/ros2_ws/build/hello_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yuma/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/yuma/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/yuma/ros2_ws/install/hello_pkg:/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.099094] (-) TimerEvent: {}
+[0.199900] (-) TimerEvent: {}
+[0.300756] (-) TimerEvent: {}
+[0.401519] (-) TimerEvent: {}
+[0.502366] (-) TimerEvent: {}
+[0.542709] (hello_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.602600] (-) TimerEvent: {}
+[0.703662] (-) TimerEvent: {}
+[0.804490] (-) TimerEvent: {}
+[0.905123] (-) TimerEvent: {}
+[1.005772] (-) TimerEvent: {}
+[1.106430] (-) TimerEvent: {}
+[1.208868] (-) TimerEvent: {}
+[1.284344] (hello_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.309054] (-) TimerEvent: {}
+[1.409756] (-) TimerEvent: {}
+[1.510511] (-) TimerEvent: {}
+[1.611205] (-) TimerEvent: {}
+[1.711858] (-) TimerEvent: {}
+[1.812907] (-) TimerEvent: {}
+[1.818346] (hello_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.913084] (-) TimerEvent: {}
+[1.993260] (hello_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.002568] (hello_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.013396] (-) TimerEvent: {}
+[2.014841] (hello_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.016530] (hello_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.026230] (hello_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.113601] (-) TimerEvent: {}
+[2.214335] (-) TimerEvent: {}
+[2.229995] (hello_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.241214] (hello_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.241637] (hello_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.242277] (hello_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.286542] (hello_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.314539] (-) TimerEvent: {}
+[2.415229] (-) TimerEvent: {}
+[2.489477] (hello_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.515441] (-) TimerEvent: {}
+[2.616087] (-) TimerEvent: {}
+[2.650646] (hello_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.716312] (-) TimerEvent: {}
+[2.817005] (-) TimerEvent: {}
+[2.842884] (hello_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.853965] (hello_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.874255] (hello_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.911800] (hello_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.917276] (-) TimerEvent: {}
+[2.950893] (hello_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.017537] (-) TimerEvent: {}
+[3.036052] (hello_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.042699] (hello_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.117767] (-) TimerEvent: {}
+[3.218734] (-) TimerEvent: {}
+[3.319371] (-) TimerEvent: {}
+[3.420123] (-) TimerEvent: {}
+[3.520832] (-) TimerEvent: {}
+[3.621496] (-) TimerEvent: {}
+[3.722217] (-) TimerEvent: {}
+[3.822935] (-) TimerEvent: {}
+[3.923633] (-) TimerEvent: {}
+[4.024281] (-) TimerEvent: {}
+[4.124930] (-) TimerEvent: {}
+[4.225727] (-) TimerEvent: {}
+[4.326356] (-) TimerEvent: {}
+[4.427112] (-) TimerEvent: {}
+[4.527968] (-) TimerEvent: {}
+[4.597341] (hello_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.628187] (-) TimerEvent: {}
+[4.729095] (-) TimerEvent: {}
+[4.829764] (-) TimerEvent: {}
+[4.930427] (-) TimerEvent: {}
+[5.031027] (-) TimerEvent: {}
+[5.132155] (-) TimerEvent: {}
+[5.232834] (-) TimerEvent: {}
+[5.333524] (-) TimerEvent: {}
+[5.434243] (-) TimerEvent: {}
+[5.534955] (-) TimerEvent: {}
+[5.635639] (-) TimerEvent: {}
+[5.736469] (-) TimerEvent: {}
+[5.837152] (-) TimerEvent: {}
+[5.938038] (-) TimerEvent: {}
+[6.038720] (-) TimerEvent: {}
+[6.139533] (-) TimerEvent: {}
+[6.240222] (-) TimerEvent: {}
+[6.340995] (-) TimerEvent: {}
+[6.400537] (hello_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.441461] (-) TimerEvent: {}
+[6.542180] (-) TimerEvent: {}
+[6.642841] (-) TimerEvent: {}
+[6.743517] (-) TimerEvent: {}
+[6.844143] (-) TimerEvent: {}
+[6.944752] (-) TimerEvent: {}
+[7.045403] (-) TimerEvent: {}
+[7.146171] (-) TimerEvent: {}
+[7.246802] (-) TimerEvent: {}
+[7.347498] (-) TimerEvent: {}
+[7.448157] (-) TimerEvent: {}
+[7.548791] (-) TimerEvent: {}
+[7.649449] (-) TimerEvent: {}
+[7.750098] (-) TimerEvent: {}
+[7.850756] (-) TimerEvent: {}
+[7.951475] (-) TimerEvent: {}
+[8.053216] (-) TimerEvent: {}
+[8.153844] (-) TimerEvent: {}
+[8.254650] (-) TimerEvent: {}
+[8.355337] (-) TimerEvent: {}
+[8.456032] (-) TimerEvent: {}
+[8.556803] (-) TimerEvent: {}
+[8.657433] (-) TimerEvent: {}
+[8.758211] (-) TimerEvent: {}
+[8.858906] (-) TimerEvent: {}
+[8.959522] (-) TimerEvent: {}
+[9.060358] (-) TimerEvent: {}
+[9.161046] (-) TimerEvent: {}
+[9.185938] (hello_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.218855] (hello_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[9.261300] (-) TimerEvent: {}
+[9.362009] (-) TimerEvent: {}
+[9.442878] (hello_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[9.443372] (hello_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.462266] (-) TimerEvent: {}
+[9.563069] (-) TimerEvent: {}
+[9.663955] (-) TimerEvent: {}
+[9.688684] (hello_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.690562] (hello_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.764258] (-) TimerEvent: {}
+[9.864834] (-) TimerEvent: {}
+[9.942578] (hello_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.956088] (hello_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[9.957740] (hello_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/yuma/ros2_ws/build/hello_pkg\n'}
+[9.965106] (-) TimerEvent: {}
+[9.971780] (hello_pkg) CommandEnded: {'returncode': 0}
+[9.974759] (hello_pkg) JobProgress: {'identifier': 'hello_pkg', 'progress': 'build'}
+[9.975828] (hello_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yuma/ros2_ws/build/hello_pkg', '--', '-j12', '-l12'], 'cwd': '/home/yuma/ros2_ws/build/hello_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yuma'), ('ROS_PACKAGE_PATH', '/home/yuma/ros2_ws/install/hello_pkg/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yuma/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/yuma'), ('OLDPWD', '/home/yuma/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yuma/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yuma'), ('NAME', 'YUMA-Laptop5'), ('WSL_INTEROP', '/run/WSL/390_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/yuma/ros2_ws/install/hello_pkg/lib/x86_64-linux-gnu/pkgconfig:/home/yuma/ros2_ws/install/hello_pkg/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/nyuma/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nyuma/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yuma/ros2_ws/build/hello_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yuma/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/yuma/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/yuma/ros2_ws/install/hello_pkg:/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[10.041546] (hello_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hello.dir/src/hello.cpp.o\x1b[0m\n'}
+[10.065356] (-) TimerEvent: {}
+[10.166046] (-) TimerEvent: {}
+[10.266813] (-) TimerEvent: {}
+[10.367573] (-) TimerEvent: {}
+[10.468477] (-) TimerEvent: {}
+[10.569291] (-) TimerEvent: {}
+[10.669957] (-) TimerEvent: {}
+[10.770611] (-) TimerEvent: {}
+[10.871315] (-) TimerEvent: {}
+[10.971947] (-) TimerEvent: {}
+[11.072688] (-) TimerEvent: {}
+[11.173269] (-) TimerEvent: {}
+[11.273989] (-) TimerEvent: {}
+[11.374736] (-) TimerEvent: {}
+[11.475401] (-) TimerEvent: {}
+[11.576035] (-) TimerEvent: {}
+[11.676719] (-) TimerEvent: {}
+[11.777366] (-) TimerEvent: {}
+[11.878150] (-) TimerEvent: {}
+[11.978926] (-) TimerEvent: {}
+[12.079748] (-) TimerEvent: {}
+[12.180599] (-) TimerEvent: {}
+[12.281346] (-) TimerEvent: {}
+[12.382079] (-) TimerEvent: {}
+[12.482744] (-) TimerEvent: {}
+[12.583544] (-) TimerEvent: {}
+[12.684304] (-) TimerEvent: {}
+[12.785095] (-) TimerEvent: {}
+[12.887216] (-) TimerEvent: {}
+[12.988182] (-) TimerEvent: {}
+[13.089978] (-) TimerEvent: {}
+[13.190879] (-) TimerEvent: {}
+[13.291752] (-) TimerEvent: {}
+[13.392812] (-) TimerEvent: {}
+[13.494553] (-) TimerEvent: {}
+[13.595559] (-) TimerEvent: {}
+[13.696887] (-) TimerEvent: {}
+[13.797543] (-) TimerEvent: {}
+[13.898325] (-) TimerEvent: {}
+[13.999053] (-) TimerEvent: {}
+[14.099981] (-) TimerEvent: {}
+[14.200774] (-) TimerEvent: {}
+[14.301544] (-) TimerEvent: {}
+[14.402199] (-) TimerEvent: {}
+[14.502949] (-) TimerEvent: {}
+[14.603838] (-) TimerEvent: {}
+[14.704790] (-) TimerEvent: {}
+[14.805576] (-) TimerEvent: {}
+[14.906256] (-) TimerEvent: {}
+[15.006896] (-) TimerEvent: {}
+[15.107740] (-) TimerEvent: {}
+[15.208518] (-) TimerEvent: {}
+[15.309230] (-) TimerEvent: {}
+[15.409862] (-) TimerEvent: {}
+[15.510493] (-) TimerEvent: {}
+[15.611392] (-) TimerEvent: {}
+[15.712077] (-) TimerEvent: {}
+[15.812744] (-) TimerEvent: {}
+[15.913554] (-) TimerEvent: {}
+[16.014457] (-) TimerEvent: {}
+[16.115311] (-) TimerEvent: {}
+[16.216000] (-) TimerEvent: {}
+[16.316625] (-) TimerEvent: {}
+[16.417360] (-) TimerEvent: {}
+[16.518036] (-) TimerEvent: {}
+[16.618744] (-) TimerEvent: {}
+[16.719378] (-) TimerEvent: {}
+[16.753435] (hello_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hello\x1b[0m\n'}
+[16.819787] (-) TimerEvent: {}
+[16.920496] (-) TimerEvent: {}
+[17.021138] (-) TimerEvent: {}
+[17.118727] (hello_pkg) StdoutLine: {'line': b'[100%] Built target hello\n'}
+[17.121285] (-) TimerEvent: {}
+[17.136541] (hello_pkg) CommandEnded: {'returncode': 0}
+[17.168029] (hello_pkg) JobProgress: {'identifier': 'hello_pkg', 'progress': 'install'}
+[17.180461] (hello_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yuma/ros2_ws/build/hello_pkg'], 'cwd': '/home/yuma/ros2_ws/build/hello_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yuma'), ('ROS_PACKAGE_PATH', '/home/yuma/ros2_ws/install/hello_pkg/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yuma/ros2_ws/install/person_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/yuma'), ('OLDPWD', '/home/yuma/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yuma/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yuma'), ('NAME', 'YUMA-Laptop5'), ('WSL_INTEROP', '/run/WSL/390_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/yuma/ros2_ws/install/hello_pkg/lib/x86_64-linux-gnu/pkgconfig:/home/yuma/ros2_ws/install/hello_pkg/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Users/nyuma/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/nyuma/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/yuma/ros2_ws/build/hello_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yuma/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages:/home/yuma/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/yuma/ros2_ws/install/hello_pkg:/home/yuma/ros2_ws/install/person_msgs:/home/yuma/ros2_ws/install/mypkg:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[17.191341] (hello_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.191867] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/lib/hello_pkg/hello\n'}
+[17.193020] (hello_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yuma/ros2_ws/install/hello_pkg/lib/hello_pkg/hello" to ""\n'}
+[17.193648] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/package_run_dependencies/hello_pkg\n'}
+[17.194035] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/parent_prefix_path/hello_pkg\n'}
+[17.194569] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/ament_prefix_path.sh\n'}
+[17.195137] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/ament_prefix_path.dsv\n'}
+[17.195412] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/path.sh\n'}
+[17.195527] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/environment/path.dsv\n'}
+[17.195616] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.bash\n'}
+[17.195830] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.sh\n'}
+[17.196207] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.zsh\n'}
+[17.196642] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/local_setup.dsv\n'}
+[17.197094] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/package.dsv\n'}
+[17.197241] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/ament_index/resource_index/packages/hello_pkg\n'}
+[17.197553] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/cmake/hello_pkgConfig.cmake\n'}
+[17.197800] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/cmake/hello_pkgConfig-version.cmake\n'}
+[17.198278] (hello_pkg) StdoutLine: {'line': b'-- Installing: /home/yuma/ros2_ws/install/hello_pkg/share/hello_pkg/package.xml\n'}
+[17.202087] (hello_pkg) CommandEnded: {'returncode': 0}
+[17.221651] (-) TimerEvent: {}
+[17.272692] (hello_pkg) JobEnded: {'identifier': 'hello_pkg', 'rc': 0}
+[17.274577] (-) EventReactorShutdown: {}

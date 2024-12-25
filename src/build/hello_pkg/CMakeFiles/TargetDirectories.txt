@@ -1,0 +1,10 @@
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/uninstall.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/hello_pkg_uninstall.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/hello.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/test.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/edit_cache.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/rebuild_cache.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/list_install_components.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/install.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/install/local.dir
+/home/yuma/ros2_ws/src/build/hello_pkg/CMakeFiles/install/strip.dir
