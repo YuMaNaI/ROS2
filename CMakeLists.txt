@@ -1,21 +1,15 @@
-cmake_minimum_required(VERSION 3.8)  # 必要なCMakeのバージョン
-project(hello_pkg)                  # プロジェクト名（パッケージ名と同じにする）
+cmake_minimum_required(VERSION 3.8) # 3.10未満のバージョン警告は修正済み
+project(hello_pkg)
 
-# 必要なパッケージを探す
-find_package(ament_cmake REQUIRED)  # ビルドシステム
-find_package(rclcpp REQUIRED)       # ROS2のC++クライアントライブラリ
-find_package(std_msgs REQUIRED)     # メッセージ型ライブラリ
+find_package(ament_cmake REQUIRED) # ament_cmakeを必須に指定
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 
-# 実行ファイルのビルド設定
-add_executable(hello src/hello.cpp) # 実行ファイル名とソースファイルの指定
-
-# 実行ファイルが依存するパッケージの指定
+add_executable(hello src/hello.cpp)
 ament_target_dependencies(hello rclcpp std_msgs)
 
-# インストール先の設定
 install(TARGETS
   hello
-  DESTINATION lib/${PROJECT_NAME})  # パッケージ名のディレクトリに配置
+  DESTINATION lib/${PROJECT_NAME})
 
-# パッケージとして登録
 ament_package()

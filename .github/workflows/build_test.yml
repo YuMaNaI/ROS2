@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        ros_distribution: [humble, iron]
+        ros_distribution: [humble, iron] # テスト対象のバージョン
 
     steps:
     - name: リポジトリのコードを取得
@@ -29,11 +29,8 @@ jobs:
         sudo apt-get install -y \
           ros-${{ matrix.ros_distribution }}-ament-cmake \
           ros-${{ matrix.ros_distribution }}-rclcpp \
-          ros-${{ matrix.ros_distribution }}-std-msgs
-
-    - name: 環境変数の設定
-      run: |
-        source /opt/ros/${{ matrix.ros_distribution }}/setup.bash
+          ros-${{ matrix.ros_distribution }}-std-msgs \
+          python3-colcon-common-extensions
 
     - name: ビルドキャッシュのクリア
       run: |
@@ -41,6 +38,7 @@ jobs:
 
     - name: ビルドの実行
       run: |
+        source /opt/ros/${{ matrix.ros_distribution }}/setup.bash
         colcon build --packages-select hello_pkg
 
     - name: テストの実行
