@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.8) # 3.10未満のバージョン警告は修正済み
+cmake_minimum_required(VERSION 3.8)
 project(hello_pkg)
 
-find_package(ament_cmake REQUIRED) # ament_cmakeを必須に指定
+find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
