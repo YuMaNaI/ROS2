@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        ros_distribution: [foxy, galactic, humble] # テストするROS2のバージョンを指定
+        ros_distribution: [iron] # テストするROS2のバージョンを指定
 
     steps:
     - name: リポジトリのコードを取得
