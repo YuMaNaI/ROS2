@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        ros_distribution: [foxy, humble, iron]
+        ros_distribution: [humble, iron]
 
     steps:
     - name: リポジトリのコードを取得
