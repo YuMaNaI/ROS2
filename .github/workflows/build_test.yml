@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        ros_distribution: [iron] # テストするROS2のバージョンを指定
+        ros_distribution: [foxy, humble, iron]
 
     steps:
     - name: リポジトリのコードを取得
@@ -24,7 +24,16 @@ jobs:
         required-ros-distributions: ${{ matrix.ros_distribution }}
 
     - name: 依存関係のインストール
-      run: sudo apt-get update && sudo apt-get install -y ros-${{ matrix.ros_distribution }}-std-msgs
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          ros-${{ matrix.ros_distribution }}-ament-cmake \
+          ros-${{ matrix.ros_distribution }}-rclcpp \
+          ros-${{ matrix.ros_distribution }}-std-msgs
+
+    - name: 環境変数の設定
+      run: |
+        source /opt/ros/${{ matrix.ros_distribution }}/setup.bash
 
     - name: ビルドキャッシュのクリア
       run: |
@@ -32,7 +41,7 @@ jobs:
 
     - name: ビルドの実行
       run: |
-        colcon build --base-paths src --packages-select hello_pkg
+        colcon build --packages-select hello_pkg
 
     - name: テストの実行
       run: |
